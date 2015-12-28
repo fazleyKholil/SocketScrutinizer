@@ -1,0 +1,27 @@
+{
+    "name": "cordova-plugin-socket-scrutinizer",
+    "version": "0.0.0",
+    "description": "Cordova socket connection plugin that enable an application to create a communication on a given port and receive data on that given port.",
+    "cordova": {
+        "id": "cordova-plugin-socket-scrutinizer",
+        "platforms": [
+      "android"
+    ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fazleyKholil/SharedPreferences.git"
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-plugin-socket-connection",
+        "socket",
+        "socket connection",
+        "port",
+        "ip",
+        "scrutinizer"
+  ],
+    "author": "Kholil Mohammad Fazley",
+    "license": "Apache 2.0"
+}

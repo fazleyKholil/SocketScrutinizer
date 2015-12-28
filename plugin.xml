@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-socket-scrutinizer" version="0.0.0">
+        <name>Socket-scrutinizer</name>
+        <description>Cordova socket connection plugin that enable an application to create a communication on a given port and receive data on that given port.</description>
+        <license>Apache 2.0</license>
+        <keywords>
+            ecosystem:cordova, cordova-android, cordova-plugin-socket-connection, socket,connection,port,ip,scrutinizer,port
+        </keywords>
+        <repo></repo>
+        <issue></issue>
+
+        <js-module src="www/SocketConnection.js" name="SocketConnection">
+            <clobbers target="SocketConnection" />
+        </js-module>
+
+        <!-- android -->
+        <platform name="android">
+            <config-file target="res/xml/config.xml" parent="/*">
+                <feature name="SocketConnection">
+                    <param name="android-package" value="SocketConnection" />
+                </feature>
+            </config-file>
+            <source-file src="src/android/SocketConnection.java" target-dir="src/" />
+        </platform>
+
+    </plugin>
